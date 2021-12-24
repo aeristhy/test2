@@ -27,33 +27,8 @@ a:hover, a:focus {
 	border-bottom: 1px solid #65ee8e;
 }
 
-.main-text {
-	font: 500 20px/1 "Roboto Mono", Helvetica, sans-serif;
-}
-
-.main-text-small {
-	font-size: 15px;
-}
-
-.scrunch {
-	z-index: -1;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	pointer-events: none;
-}
-
-.scrunch:after {
-	background: #36393f;
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
+.text {
+	font-size: 14px;
 }
 
 .footer {
@@ -86,17 +61,6 @@ a:hover, a:focus {
 	}
 }
 
-/* @media (max-width: 950px) {
-	.footer {
-		position: relative;
-		left: auto;
-		bottom: auto;
-		padding: 0 7.5vw 7.5vw;
-		-webkit-box-align: start;
-		align-items: flex-start;
-	}
-} */
-
 .footer-links {
 	margin-top: 1em;
 	line-height: 1;
@@ -109,30 +73,30 @@ a:hover, a:focus {
 }
 
 @media (hover: hover) {
-	.footer-links:nth-child(odd):hover~.scrunch {
-		background-color: #d9534f;
+	.footer-links:nth-child(odd):hover~ {
+		background-color: #65ee8e;
 	}
 
-	.footer-links:nth-child(2n):hover~.scrunch {
-		background-color: #428bca;
+	.footer-links:nth-child(2n):hover~ {
+		background-color: #65ee8e;
 	}
 
-	.link-discord:hover~.scrunch:after {
+	.link-discord:hover~ {
 		-webkit-animation: one 1s .25s linear forwards;
 				animation: one 1s .25s linear forwards;
 	}
 
-	.link-twitter:hover~.scrunch:after {
+	.link-twitter:hover~ {
 		-webkit-animation: two 1s .25s linear forwards;
 				animation: two 1s .25s linear forwards;
 	}
 
-	.link-instagram:hover~.scrunch:after {
+	.link-instagram:hover~ {
 		-webkit-animation: three 1s .25s linear forwards;
 				animation: three 1s .25s linear forwards;
 	}
 
-	.link-github:hover~.scrunch:after {
+	.link-github:hover~ {
 		-webkit-animation: four 1s .25s linear forwards;
 				animation: four 1s .25s linear forwards;
 	}
