@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500");
 
 html {
@@ -18,13 +17,11 @@ body {
 a {
 	color: inherit;
 	position: relative;
-	border-bottom: 1px solid #f8f8f6;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
 	color: #65ee8e;
-	border-bottom: 1px solid #65ee8e;
 }
 
 .text {
